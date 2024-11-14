@@ -1,16 +1,30 @@
 package service;
 
-import dao.LivroDAO;
+import dao.LivroDao;
 import modelo.Livro;
 
 public class LivroService {
-    LivroDAO livroDAO;
+    LivroDao livroDao;
 
     public LivroService(){
-        this.livroDAO = new LivroDAO();
+    	
+    	
+        this.livroDao = new LivroDao();
+    }
+    
+    public Livro cosultarLivro(int id) {
+    	System.out.println("Estamos consultando! Aguarde!!!");
+    	Livro livro = livroDao.consultarLivro(id);
+    	return livro;
     }
     
     public void cadastrarLivro(Livro livro){
-        livroDAO.cadastrarLivro(livro);
+    	if(livro.getTitulo().length()>0) {
+    		livroDao.cadastrarLivro(livro);
+    		System.out.println("Cadastro realizado com sucesso!!");
+    	}
+    	else {
+    		System.out.println("Precisa preencher o titulo");
+    	}
     }
 }

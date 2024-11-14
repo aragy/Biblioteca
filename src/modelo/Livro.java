@@ -13,7 +13,7 @@ public class Livro {
     private String autor;
     private String ISBN;
     private int anoPublicacao;
-    private boolean disponibilidade;
+    private int disponibilidade;
 
     public int getId() {
         return this.id;
@@ -52,15 +52,13 @@ public class Livro {
         this.anoPublicacao = anoPublicacao;
     }
 
-    public boolean isDisponibilidade() {
+
+
+    public int getDisponibilidade() {
         return this.disponibilidade;
     }
 
-    public boolean getDisponibilidade() {
-        return this.disponibilidade;
-    }
-
-    public void setDisponibilidade(boolean disponibilidade) {
+    public void setDisponibilidade(int disponibilidade) {
         this.disponibilidade = disponibilidade;
     }
 
