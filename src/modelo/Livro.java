@@ -1,4 +1,4 @@
-package main.java.biblioteca.modelo;
+package modelo;
 
 /*
  * Atributos: id, titulo

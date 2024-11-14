@@ -1,4 +1,4 @@
-USE biblioteca_db;
+USE biblioteca_teste;
 
 -- Inserindo Usuários
 INSERT INTO usuario (nome, endereco, telefone, email, cpf, categoria, status)
@@ -10,11 +10,11 @@ VALUES
 -- Inserindo Livros
 INSERT INTO livro (titulo, autor, isbn, editora, ano_publicacao, categoria, disponibilidade)
 VALUES
-('Dom Casmurro', 'Machado de Assis', '978-85-0000-000-1', 'Editora A', 1899, 'Romance', 'Disponível'),
-('O Cortiço', 'Aluísio Azevedo', '978-85-0000-000-2', 'Editora B', 1890, 'Naturalismo', 'Disponível'),
-('Memórias Póstumas de Brás Cubas', 'Machado de Assis', '978-85-0000-000-3', 'Editora A', 1881, 'Romance', 'Disponível'),
-('Vidas Secas', 'Graciliano Ramos', '978-85-0000-000-4', 'Editora C', 1938, 'Romance', 'Disponível'),
-('Grande Sertão: Veredas', 'Guimarães Rosa', '978-85-0000-000-5', 'Editora D', 1956, 'Romance', 'Disponível');
+('Dom Casmurro', 'Machado de Assis', '978-85-0000-000-1', 'Editora A', 1899, 'Romance', 0),
+('O Cortiço', 'Aluísio Azevedo', '978-85-0000-000-2', 'Editora B', 1890, 'Naturalismo', 0),
+('Memórias Póstumas de Brás Cubas', 'Machado de Assis', '978-85-0000-000-3', 'Editora A', 1881, 'Romance', 0),
+('Vidas Secas', 'Graciliano Ramos', '978-85-0000-000-4', 'Editora C', 1938, 'Romance', 0),
+('Grande Sertão: Veredas', 'Guimarães Rosa', '978-85-0000-000-5', 'Editora D', 1956, 'Romance', 0);
 
 -- Inserindo Empréstimos (Inicialmente vazia, mas podemos simular alguns)
 INSERT INTO emprestimo (id_usuario, id_livro, data_emprestimo, data_devolucao_prevista, renovacoes)

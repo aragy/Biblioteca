@@ -1,5 +1,3 @@
--- Criando o banco de dados
---CREATE DATABASE IF NOT EXISTS biblioteca_db;
 USE biblioteca_teste;
 
 -- Tabela de Usuários
@@ -24,7 +22,7 @@ CREATE TABLE livro (
     editora VARCHAR(100),
     ano_publicacao INT,
     categoria VARCHAR(50),
-    disponibilidade ENUM('Disponível', 'Emprestado') DEFAULT 'Disponível'
+    disponibilidade INT
 );
 
 -- Tabela de Empréstimos

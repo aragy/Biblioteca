@@ -1,4 +1,4 @@
-package main.java.biblioteca.dao;
+package dao;
 
 
 import java.sql.Connection;
@@ -6,8 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import main.java.biblioteca.modelo.Livro;
-import main.java.biblioteca.utils.ConexaoBD;
+import modelo.Livro;
+import utils.ConexaoBD;
 
 public class LivroDAO {
 
